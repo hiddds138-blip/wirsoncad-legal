@@ -15,37 +15,39 @@
 </head>
 <body>
   <main>
-    <span class="badge">Paquete Oficial: cl.wirsoncad.app</span>
+    <span class="badge">Paquete Oficial: cl.wirsoncad.app · Versión 1.5.0</span>
     <h1>Política de Privacidad, Independencia Gubernamental y Eliminación de Datos — WirsonCAD</h1>
     <p><strong>Última actualización:</strong> Noviembre 2026</p>
 
-    <h2>1. Declaración de Independencia Gubernamental (Google Play Misleading Claims Policy)</h2>
+    <h2>1. Declaración de Independencia Gubernamental</h2>
     <p><strong>WirsonCAD NO representa, no está afiliada, patrocinada ni respaldada por la Superintendencia de Electricidad y Combustibles de Chile (SEC) ni por ninguna entidad gubernamental.</strong> Toda la información normativa citada proviene de documentos públicos oficiales del Estado de Chile: Decreto Supremo N° 08, los 19 Pliegos Técnicos Normativos RIC y el Decreto Supremo N° 92, disponibles públicamente en <a href="https://www.sec.cl" target="_blank" rel="noopener">https://www.sec.cl</a> y <a href="https://www.bcn.cl/leychile" target="_blank" rel="noopener">Biblioteca del Congreso Nacional de Chile</a>.</p>
 
     <h2>2. Arquitectura Sin Servidores Propios (100% Serverless)</h2>
-    <p>WirsonCAD ejecuta toda la simulación eléctrica y evaluación técnica localmente en tu dispositivo. No almacenamos bases de datos centrales con información personal de los usuarios.</p>
+    <p>WirsonCAD ejecuta la simulación eléctrica CAD, el Camino SEC, los ensayos normativos y La Práctica localmente en tu dispositivo. No operamos bases de datos centrales con información personal de los usuarios.</p>
     <ul>
-      <li><strong>Modo Invitado:</strong> Tu progreso vive temporalmente en la memoria local de sesión, salvo el contador técnico anónimo de cuota diaria de exámenes gratuitos.</li>
-      <li><strong>Inicio de sesión opcional con Google:</strong> Si decides vincular tu cuenta, el progreso se respalda exclusivamente en la carpeta privada <code>appDataFolder</code> de tu propio Google Drive.</li>
+      <li><strong>Progreso local:</strong> Tus circuitos, respuestas de estudio, ritmo del Camino SEC, racha diaria, XP, Volts y compañeros desbloqueados se almacenan únicamente en el dispositivo (<code>localStorage</code>, <code>IndexedDB</code> y <code>Capacitor Preferences</code>).</li>
+      <li><strong>Inicio de sesión opcional con Google:</strong> Si decides vincular tu cuenta de Google, tu progreso se respalda exclusivamente en la carpeta privada oculta <code>appDataFolder</code> de tu propio Google Drive, sin acceso al resto de tus archivos personales.</li>
+      <li><strong>Notificaciones locales de recordatorio:</strong> Los recordatorios diarios de racha funcionan 100 % de forma local en tu dispositivo mediante el sistema de alarmas de Android (<code>POST_NOTIFICATIONS</code>), sin enviar datos a servidores externos. Puedes desactivarlos en cualquier momento desde los ajustes de notificaciones de Android.</li>
+      <li><strong>Reportes voluntarios de errores (🚩):</strong> Si decides reportar un error en una pregunta o ejercicio, la app prepara un mensaje técnico (ID de pregunta o nivel) para que tú decidas enviarlo voluntariamente por correo a <a href="mailto:wirsoncad.soporte@gmail.com">wirsoncad.soporte@gmail.com</a>.</li>
     </ul>
 
     <h2>3. Publicidad, Pagos y Datos Tratados por Terceros</h2>
     <ul>
-      <li><strong>Google AdMob y Consentimiento UMP:</strong> En el Plan Gratuito se muestran anuncios gestionados por Google AdMob tras solicitar el consentimiento correspondiente (Google UMP). Google AdMob puede recopilar identificadores del dispositivo (como el ID de publicidad de Android), dirección IP y métricas básicas de interacción con anuncios para mostrar y medir publicidad. Más información en la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>.</li>
-      <li><strong>Google Play Billing y RevenueCat:</strong> Las compras integradas y suscripciones (<em>Sin Anuncios 2 Meses</em>, <em>Sin Anuncios Definitivo</em>, <em>Plan Pro Mensual</em> y <em>Plan Pro Anual</em>) se procesan de forma cifrada a través de Google Play y RevenueCat, quienes tratan identificadores técnicos de transacción y estado de suscripción para validar tus derechos de acceso. WirsonCAD nunca recibe ni almacena datos de tus tarjetas o cuentas bancarias. Más información en la <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Política de Privacidad de RevenueCat</a>.</li>
+      <li><strong>Google AdMob y Consentimiento UMP:</strong> En el Plan Gratuito se muestran anuncios gestionados por Google AdMob tras solicitar tu consentimiento (Google UMP). Google AdMob puede tratar identificadores publicitarios del dispositivo, dirección IP y métricas básicas de interacción para mostrar y medir anuncios. Más información en la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>.</li>
+      <li><strong>Google Play Billing y RevenueCat:</strong> Las compras integradas y suscripciones (<em>Sin Anuncios 2 Meses</em>, <em>Sin Anuncios Definitivo</em>, <em>Plan Pro Mensual</em> y <em>Plan Pro Anual</em>) se procesan de forma cifrada mediante Google Play y RevenueCat para validar tus derechos de acceso. WirsonCAD nunca recibe ni almacena datos de tus tarjetas o cuentas bancarias. Más información en la <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Política de Privacidad de RevenueCat</a>.</li>
     </ul>
 
     <h2>4. Eliminación de Cuenta y Datos (Data Deletion Policy)</h2>
     <p>Puedes eliminar el 100 % de tus datos locales y en la nube en cualquier momento directamente desde la aplicación:</p>
     <ol>
       <li>Abre <strong>WirsonCAD</strong> y pulsa el ícono de <strong>Ajustes (⚙️)</strong> en la barra superior.</li>
-      <li>Selecciona <strong>Privacidad, Aviso SEC y Eliminación de Datos</strong>.</li>
-      <li>Pulsa <strong>Eliminar mis datos locales y respaldo Drive</strong> (borra <code>localStorage</code>, preferencias locales, caché <code>IndexedDB</code> y el respaldo en Google Drive <code>appDataFolder</code>).</li>
-      <li>Adicionalmente, puedes revocar el acceso de WirsonCAD desde <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Permisos de tu Cuenta de Google</a>.</li>
+      <li>Selecciona <strong>Privacidad, Términos, Independencia y Borrado de Datos</strong>.</li>
+      <li>Pulsa <strong>Borrar mis datos locales</strong> (elimina <code>localStorage</code>, preferencias locales, caché <code>IndexedDB</code> y tu sesión local).</li>
+      <li>Para borrar el respaldo en la nube, revoca el acceso de WirsonCAD desde <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Permisos de tu Cuenta de Google</a> o <em>Google Drive → Configuración → Administrar aplicaciones</em>.</li>
     </ol>
 
     <h2>5. Contacto y Soporte</h2>
-    <p>Si tienes preguntas sobre esta Política de Privacidad o deseas solicitar asistencia para la eliminación de datos, puedes escribir a: <a href="mailto:maxivalenzuela1910@gmail.com">maxivalenzuela1910@gmail.com</a>.</p>
+    <p>Si tienes consultas sobre esta Política de Privacidad, reportes técnicos o deseas solicitar asistencia para la eliminación de datos, escríbenos a: <a href="mailto:wirsoncad.soporte@gmail.com">wirsoncad.soporte@gmail.com</a>.</p>
   </main>
 </body>
 </html>
